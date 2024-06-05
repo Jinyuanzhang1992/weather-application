@@ -16,7 +16,7 @@ function WeatherDetails() {
           <img
             src={`http://openweathermap.org/img/wn/${icon}.png`}
             alt="icon"
-            className="w-20 h-20 "
+            className="w-20 h-20"
           />
         </li>
         <li className="text-5xl">{`${Math.round(temp)}℃`}</li>
