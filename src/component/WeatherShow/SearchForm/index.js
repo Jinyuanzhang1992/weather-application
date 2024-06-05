@@ -56,6 +56,7 @@ function SearchForm() {
 
     try {
       const response = await axios.get(url);
+      console.log("response: ", response);
       return response.data; // 返回数据以供后续处理
     } catch (error) {
       console.log(error);
@@ -84,7 +85,6 @@ function SearchForm() {
     }
 
     const weatherData = await handFetchWeather();
-    console.log("weatherData: ", weatherData);
 
     if (!weatherData) {
       console.error("Failed to fetch weather data.");
